@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>cadastro</title>
+</head>
+<body>
+    <div class="main-cadastro">
+        <form class="form-cadastro" onsubmit="mySubmitFunction(event)">
+            <h1>Cadastrar-se</h1>
+                <div class="input-group">
+                    <div class="inputs-cadastro">
+                        <label>Nome</label>
+                        <input type="text" id="nome" placeholder="Exemplo">
+                    </div>
+
+                    <div class="inputs-cadastro">
+                        <label>E-mail</label>
+                        <input type="email" id="email" placeholder="Exemplo@gmail.com">
+                    </div>
+
+                    <div class="inputs-cadastro">
+                        <label>Número</label>
+                        <input type="text" id="numero" placeholder="Exemplo (11) 9603-02369">
+                    </div>
+
+                    <div class="inputs-cadastro">
+                        <label>Senha</label>
+                        <input type="password" id="senha" placeholder="">
+                    </div>
+
+                    <div class="inputs-cadastro">
+                        <label>Confirmar senha</label>
+                        <input type="password" id="confirmasenha" placeholder="">
+                    </div>
+                    <div class="btn-cadastro">
+                        <button class="btn-cancelar" id="cancelar">Cancelar</button>
+                        <button class="btn-continuar" id="continuar" type="submit">Continuar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+            var botaoCancelar = document.getElementById("cancelar");
+                botaoCancelar.addEventListener("click", function() {
+                window.location.href = "../home/index.html";
+            });
+            var botaoContinuar = document.getElementById("continuar");
+                botaoContinuar.addEventListener("click", function() {
+                window.location.href = "../home/index.html";
+            });
+            function mySubmitFunction(e) {
+                e.preventDefault();
+                }
+        </script>
+    </body>
+</html>

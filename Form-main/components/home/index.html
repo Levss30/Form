@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="main-login">
+            <div class="left-login">
+                <h1>Faça login <br> e venha se divertir</h1>
+                <img src="Alien.svg" class="left-login-image" alt="Alien">
+            </div>
+            <div class="right-login">
+                <div class="card-login">
+                    <div class="textfield">
+                        <h1>LOGIN</h1>
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" placeholder="Usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+                    <button class="btn-login" id="login">Login</button>
+                    <button class="btn-cadastro" id="btn-cadastro">Cadastrar-se</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Obtém uma referência ao botão
+            var botaoCadastro = document.getElementById("btn-cadastro");
+        
+            // Adiciona um ouvinte de evento para o clique no botão
+            botaoCadastro.addEventListener("click", function() {
+            // Redireciona para a outra página de cadastro
+            window.location.href = "../cadastro/cadastro.html";
+            });
+        </script>
+        <script>
+            // Obtém uma referência ao botão
+            var botaoCadastro = document.getElementById("login");
+
+            // Adiciona um ouvinte de evento para o clique no botão
+            botaoCadastro.addEventListener("click", function() {
+            // Redireciona para a outra página de cadastro
+            window.location.href = "../web/web.html";
+            });
+        </script>
+    </body>
+</html>

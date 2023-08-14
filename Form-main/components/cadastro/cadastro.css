@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #201b2c;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-cadastro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-cadastro{
+    height: 90vh;
+    background: #2b134b;
+    display: flex;
+    width: 60vh;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.form-cadastro h1{
+    font-size: large;
+    color: #00ff88;
+    margin-top: 20px;
+}
+
+.inputs-cadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.inputs-cadastro input{
+    outline: none;
+    border: 2px solid rgb(144, 144, 144);
+    border-radius: 4px;
+    height: 30px;
+    width: 40vh;
+    background: #c6bdcc;
+}
+
+.inputs-cadastro label{
+    color: #10df7e;
+}
+
+.btn-cadastro{
+    display: flex;
+    gap: 120px;
+    margin-top: 90px;
+}
+
+.btn-continuar{
+    height: 30px;
+    width: 80px;
+    color: #00ff88;
+    background: #201b2c;
+    border-radius: 5px;
+    border-color: #10df7e;
+    border: 1px;
+}
+
+.btn-cancelar{
+    height: 30px;
+    width: 80px;
+    color: #00ff88;
+    border: none;
+    background: none;
+}
